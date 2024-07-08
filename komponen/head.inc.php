@@ -15,13 +15,15 @@
 
     :root {
         --custom-bg-color: #039c08;
+        --custom-bg-active: #ebe8e8;
     }
 
-    .badge.text-bg-primary,
+    .badge.text-bg-primary {
+        background-color: var(--custom-bg-color) !important;
+    }
     .dropdown-item:active,
     .nav-link:active {
-        background-color: var(--custom-bg-color) !important;
-
+        background-color: var(--custom-bg-active) !important;
     }
 
     .questrial-regular {
