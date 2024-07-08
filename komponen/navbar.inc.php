@@ -6,7 +6,7 @@
                 <div class="container-fluid justify-content-center">
                     <a class="navbar-brand justify-content-center"><a class="navbar-brand d-flex align-items-center"
                             href=".">
-                            <img src="assets\image\masjid.png" alt="Logo" width="68" height="54"
+                            <img src="image\masjid.png" alt="Logo" width="68" height="54"
                                 class="d-inline-block align-text-top">
                             <span class="ms-2">MASJID AL-BAYAAN </span></a>
                 </div>

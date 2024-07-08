@@ -18,23 +18,25 @@
 
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 
-.questrial-regular {
-    font-family: "Questrial", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+    .questrial-regular {
+        font-family: "Questrial", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
 
-body {
-    font-family: "Questrial", sans-serif;
-}
+    body {
+        font-family: "Questrial", sans-serif;
+    }
+
     @media (min-width: 768px) {
         .bd-placeholder-img-lg {
             font-size: 3.5rem;
         }
     }
+
     .form-signin {
         max-width: 330px;
         padding: 1rem;
@@ -47,63 +49,65 @@ body {
     }
 
     .navbar-brand {
-            display: flex;
-            align-items: center;
-        }
+        display: flex;
+        align-items: center;
+    }
 
 
-        .logo-text {
-            font-size: 1.25rem;
-            font-weight: normal;
-        }
-        body {
-            font-family: "Questrial", sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f8f9fa;
-        }
+    .logo-text {
+        font-size: 1.25rem;
+        font-weight: normal;
+    }
 
-        .form-container {
-            border: 3px solid white;
-            border-radius: 8px;
-            padding: 8px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+    body {
+        font-family: "Questrial", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f8f9fa;
+    }
 
-        .logo-container {
-            display: flex;
-            align-items: left;
-            justify-content: center;
-            padding:2px;
-            margin:1px;
+    .form-container {
+        border: 3px solid white;
+        border-radius: 8px;
+        padding: 8px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
 
-        }
+    .logo-container {
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        padding: 2px;
+        margin: 1px;
 
-        .logo-container img {
-        }
+    }
 
-        .logo-text {
-            font-size: 20px;
-            font-weight: normal;
-        }
+    .logo-container img {}
 
-        .form-signin {
-            max-width: 440px;
-            margin: auto;
-        }
-        .btnl{
-            background-color: #04d90b;
-            padding:2px;
-            color:black;
-        }
-        .btnl:hover{
-            background-color: #04b809;
-        }
+    .logo-text {
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .form-signin {
+        max-width: 440px;
+        margin: auto;
+    }
+
+    .btnl {
+        background-color: #04d90b;
+        padding: 2px;
+        color: black;
+    }
+
+    .btnl:hover {
+        background-color: #04b809;
+    }
     </style>
 
 </head>
@@ -111,38 +115,38 @@ body {
 <body class="d-flex align-items-center py-4">
 
     <main class="form-signin w-100 m-auto">
-    <div class="form-container">
-        <div class="logo-container">
-            <a class="navbar-brand" href=".">
-                <img src="image/masjid.png" alt="Logo" width="93" height="75" class="d-inline-block align-text-top">
-                <span class="logo-text">Masjid Al-Bayaan<br>Login Here</span>
-            </a>
+        <div class="form-container">
+            <div class="logo-container">
+                <a class="navbar-brand" href=".">
+                    <img src="image/masjid.png" alt="Logo" width="93" height="75" class="d-inline-block align-text-top">
+                    <span class="logo-text">Masjid Al-Bayaan<br>Login Here</span>
+                </a>
+            </div>
+            <form class="form-signin needs-validation" novalidate action="proses\proses_login.php" method="POST">
+                <div class="form-floating mb-2 rounded-2">
+                    <input name="username" type="email" class="form-control" id="validationCustomUsername"
+                        placeholder="name@example.com" required>
+                    <label for="floatingInput">Email address</label>
+                    <div class="invalid-feedback">
+                        Masukkan email yang benar
+                    </div>
+                </div>
+                <div class="form-floating">
+                    <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                    <label for="floatingPassword">Password</label>
+                    <div class="invalid-feedback">
+                        Please fill in the password
+                    </div>
+                </div>
+                <div class="form-check text-start my-3">
+                    <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Remember me
+                    </label>
+                </div>
+                <button class="btnl w-100 py-2 rounded-1" type="submit" name="submit_validate" value="aaa">Login</button>
+            </form>
         </div>
-        <form class="form-signin needs-validation" novalidate>
-            <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                <label for="floatingInput">Email address</label>
-                <div class="invalid-feedback">
-                    Masukkan email yang benar
-                </div>
-            </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                <label for="floatingPassword">Password</label>
-                <div class="invalid-feedback">
-                    Please fill in the password
-                </div>
-            </div>
-            <div class="form-check text-start my-3">
-                <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Remember me
-                </label>
-            </div>
-            <button class="btnl w-100 py-2 rounded-1" type="submit">Login</button>
-        </form>
-    </div>
-    </main>
     </main>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -151,6 +155,28 @@ body {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+    </script>
+
 </body>
 
 </html>

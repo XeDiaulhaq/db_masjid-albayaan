@@ -15,6 +15,8 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
     include("layanan.php");
 } elseif (isset($_GET['x']) && $_GET['x'] == 'login') {
     include("login.php");
+}else{
+    include("home.php");
 }
 
 if (!isset($_GET['x']) || $_GET['x'] != 'login') {

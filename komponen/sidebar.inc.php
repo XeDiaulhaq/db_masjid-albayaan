@@ -13,7 +13,7 @@
                     </div>
                     <div class="offcanvas-body">
                         <div class="navbar-nav">
-                            <a class="nav-link  <?php echo (isset($_GET['x']) && $_GET['x']=='home') ? 'border-bottom' : '' ; ?>" href="home" >BERANDA</a> 
+                        <a class="nav-link <?php echo ((isset($_GET['x']) && $_GET['x'] == 'home') || !isset($_GET['x'])) ? 'border-bottom' : ''; ?>" href="home">BERANDA</a>
                             <!-- style="border-bottom: 1px solid; -->
                             <div class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle <?php echo (isset($_GET['x']) && $_GET['x']=='profil') ? 'border-bottom' : '' ; ?>" href="profil" id="navbarDropdownProfil" role="button"

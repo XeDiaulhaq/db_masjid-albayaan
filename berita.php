@@ -154,9 +154,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col bg-denger">
+                <div id="news-container" class="col bg-denger">
                     <div class="card mt-2">
-                        <div class="card-header ">Islamic Content</div>
+                        <div class="card-header ">News Container</div>
                         <div class="card-body">
                             <h5 class="card-title">Islamic Content</h5>
                             <p class="card-text">
@@ -189,3 +189,23 @@
             </div>
         </div>
     </div>
+    <script>
+        const apiKey = '1898fabad0d946fe8c4a355c25177cd7'; // Ganti dengan kunci API Anda
+        const url = `https://newsapi.org/v2/everything?q=Islamic&language=id&apiKey=${apiKey}`;
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const newsContainer = document.getElementById('news-container');
+                data.articles.forEach(article => {
+                    const articleElement = document.createElement('div');
+                    articleElement.innerHTML = `
+                        <h2>${article.title}</h2>
+                        <p>${article.description}</p>
+                        <a href="${article.url}" target="_blank">Read more</a>
+                    `;
+                    newsContainer.appendChild(articleElement);
+                });
+            })
+            .catch(error => console.error('Error fetching the news:', error));
+    </script>
