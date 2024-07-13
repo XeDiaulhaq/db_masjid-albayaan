@@ -14,10 +14,17 @@
     @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
     :root {
-        --custom-bg-color: #039c08;
+        --custom-bg-color: #007e04;
+        --custom-bg-color-2: #005e03;
         --custom-bg-active: #ebe8e8;
     }
-
+    .btn-primary{
+        background-color: var(--custom-bg-color) !important;
+        border: none;
+    }
+    .btn-primary:hover{
+        background-color: var(--custom-bg-color-2) !important;
+    }
     .badge.text-bg-primary {
         background-color: var(--custom-bg-color) !important;
     }
@@ -174,6 +181,12 @@
         text-align: center;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
+    }
+    .btnl {
+        background-color: #04d90b;
+        padding: 2px;
+        color: black;
+        border: none;
     }
     </style>
 </head>
