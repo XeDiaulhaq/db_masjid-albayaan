@@ -4,7 +4,7 @@ if(!empty($_SESSION['username_user'])){
     header('Location: hom');
     exit(); // Tambahkan exit() di sini
 }
-require("komponen/head.inc.php");
+include("komponen/head.inc.php");
 ?>
 
 
@@ -25,7 +25,14 @@ require("komponen/head.inc.php");
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
-
+    .btn-primary{
+        background-color: var(--custom-bg-color-1) !important;
+        border-color: var(--custom-bg-color);
+        color:black;
+    }
+    .btn-primary:hover{
+        background-color: var(--custom-bg-color-2) !important;
+    }
     .questrial-regular {
         font-family: "Questrial", sans-serif;
         font-weight: 400;
@@ -103,17 +110,6 @@ require("komponen/head.inc.php");
         max-width: 440px;
         margin: auto;
     }
-
-    .btnl {
-        background-color: #04d90b;
-        padding: 2px;
-        color: black;
-        border: none;
-    }
-
-    .btnl:hover {
-        background-color: #04b809;
-    }
     </style>
 
 </head>
@@ -150,7 +146,7 @@ require("komponen/head.inc.php");
                         Remember me
                     </label>
                 </div>
-                <button class="btn btn-primary w-100 border-0" type="submit" name="submit_validate" value="aaa">Login</button>
+                <button class="btn btn-primary w-100" type="submit" name="submit_validate" value="aaa">Login</button>
             </form>
         </div>
     </main>

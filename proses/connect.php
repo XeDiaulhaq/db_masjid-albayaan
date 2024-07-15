@@ -1,13 +1,13 @@
 <?php
-$servername = "localhost"; // Nama server Anda
-$username = "root"; // Nama pengguna database Anda
-$password = ""; // Kata sandi database Anda
-$dbname = "db_masjid"; // Nama database Anda
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "db_masjid";
 
-// Membuat koneksi
+// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Memeriksa koneksi
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }

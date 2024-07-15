@@ -16,20 +16,44 @@
                 <div class="container-fluid justify-content-center">
                     <?php if (isset($_SESSION['username_user'])): ?>
                         <div class="dropdown">
-                            <a class="navbar-brand" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <?php echo $_SESSION['username_user']; ?>
+                            <a class="navbar-brand d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="navbar-toggler me-2" type="button">
+                                    <i class="bi bi-person-circle"></i>
+                                </button>
+                                <span class="username d-none d-lg-inline"><?php echo $_SESSION['username_user']; ?></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">PROFIL</a></li>
-                                <li><a class="dropdown-item" href="#">SETTING</a></li>
-                                <li><a class="dropdown-item" href="logout">LOG OUT</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-person-circle me-2"></i>PROFIL</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>SETTING</a></li>
+                                <li><a class="dropdown-item" href="logout"><i class="bi bi-box-arrow-in-left me-2"></i>LOG OUT</a></li>
                             </ul>
                         </div>
                     <?php else: ?>
-                        <a class="navbar-brand" href="login">Login</a>
+                        <a class="navbar-brand" href="login"><i class="bi bi-box-arrow-in-right me-2"></i>Login</a>
                     <?php endif; ?>
                 </div>
             </nav>
         </div>
     </div>
 </div>
+
+<style>
+    @media (max-width: 992px) { /* menyesuaikan breakpoint sesuai dengan kebutuhan */
+        .username {
+            display: none;
+        }
+    }
+</style>
+
+<script>
+    // JavaScript untuk menangani menu dropdown saat ikon diklik
+    document.addEventListener('DOMContentLoaded', function() {
+        var dropdownToggle = document.querySelector('.navbar-brand[data-bs-toggle="dropdown"]');
+        if (dropdownToggle) {
+            dropdownToggle.addEventListener('click', function() {
+                var dropdownMenu = this.nextElementSibling;
+                dropdownMenu.classList.toggle('show');
+            });
+        }
+    });
+</script>
