@@ -424,7 +424,7 @@ while ($record = mysqli_fetch_array($query)) {
         </div>
     </div>
     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"><?php
-        require('proses\connect.php');
+        require('proses/connect.php');
         
         // Query untuk mengambil semua data dari tabel tb_donasi
         $query = "SELECT * FROM tb_donasi";
@@ -484,14 +484,14 @@ while ($record = mysqli_fetch_array($query)) {
 </div>
 
 <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    
     (() => {
         'use strict'
 
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+       
         const forms = document.querySelectorAll('.needs-validation')
 
-        // Loop over them and prevent submission
+        
         Array.from(forms).forEach(form => {
             form.addEventListener('submit', event => {
                 if (!form.checkValidity()) {

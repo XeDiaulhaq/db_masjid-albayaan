@@ -73,10 +73,9 @@
         .nav-menu a:hover {
             border-bottom: 1px solid;
         }
-        article {
-            font-family: 'Times New Roman', Times, serif;
+        p, pre, arcticel{
             text-align: justify;
-            font-size: medium;
+            font-size: 18px ;
         }
         .navbar-brand {
             display: flex;

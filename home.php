@@ -2,8 +2,6 @@
     <!-- SELECTION HOME -->
     <div class="container-xl">
         <section id="home">
-
-            <h2>BERANDA PAGE</h2>
             <div class="row">
                 <div class="col mb-2">
                     <div id="carouselExampleIndicators" class="carousel slide">
@@ -17,13 +15,13 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="image\Spanduk Qurban FIX.jpg" class="d-block w-100" alt="...">
+                                <img src="image/Spanduk Qurban FIX.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="image\Spanduk Qurban FIX.jpg" class="d-block w-100" alt="...">
+                                <img src="image/Spanduk Qurban FIX.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="image\Spanduk Qurban FIX.jpg" class="d-block w-100" alt="...">
+                                <img src="image/Spanduk Qurban FIX.jpg" class="d-block w-100" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -48,21 +46,21 @@
                                 <div class="col-xl-3 col-md-6">
                                     <div class="icon-box">
                                         <div class="icon"><i class="bi bi-person-fill"></i></i></div>
-                                        <h4 class="title"><a href="" class="stretched-link">PROFILE</a></h4>
+                                        <h4 class="title"><a href="profil" class="stretched-link">PROFILE</a></h4>
                                     </div>
                                 </div><!--End Icon Box -->
 
                                 <div class="col-xl-3 col-md-6">
                                     <div class="icon-box">
                                         <div class="icon"><i class="bi bi-newspaper"></i></div>
-                                        <h4 class="title"><a href="" class="stretched-link">BERITA</a></h4>
+                                        <h4 class="title"><a href="berita" class="stretched-link">BERITA</a></h4>
                                     </div>
                                 </div><!--End Icon Box -->
 
                                 <div class="col-xl-3 col-md-6">
                                     <div class="icon-box">
                                         <div class="icon"><i class="bi bi-cash"></i></div>
-                                        <h4 class="title"><a href="" class="stretched-link">LAYANAN</a></h4>
+                                        <h4 class="title"><a href="layanan" class="stretched-link">LAYANAN</a></h4>
                                     </div>
                                 </div><!--End Icon Box -->
 
@@ -78,47 +76,35 @@
                     <div class="card">
                         <div class="card-header">Jadwal Azan</div>
                         <div class="card-body">
-                            <h5 class="card-title"><i class="bi bi-geo-alt-fill"></i></h5>
+                            <h3 class="card-title tgl"><i class="bi bi-geo-alt-fill"></i></h3>
                             <p class="card-text">
                             <ul class="list-group">
                                 <li class="list-group-item d-flex justify-content-between align-items-center Imsak">
                                     Imsak
-                                    <span class="badge text-bg-primary rounded-pill">err</span>
+                                    <span class="badge text-bg-primary rounded-pill">04:30</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center Subuh">
                                     Subuh
-                                    <span class="badge text-bg-primary rounded-pill">err</span>
+                                    <span class="badge text-bg-primary rounded-pill">04:45</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center Dhuzur">
                                     Dhuzur
-                                    <span class="badge text-bg-primary rounded-pill">err</span>
+                                    <span class="badge text-bg-primary rounded-pill">12:00</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center Ashar">
                                     Ashar
-                                    <span class="badge text-bg-primary rounded-pill">err</span>
+                                    <span class="badge text-bg-primary rounded-pill">15:30</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center Magrib">
                                     Magrib
-                                    <span class="badge text-bg-primary rounded-pill">err</span>
+                                    <span class="badge text-bg-primary rounded-pill">18:00</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center Isya">
                                     Isya
-                                    <span class="badge text-bg-primary rounded-pill">err</span>
+                                    <span class="badge text-bg-primary rounded-pill">19:15</span>
                                 </li>
                             </ul>
                             </p>
-                        </div>
-                    </div>
-                    <div class="card mt-3">
-                        <div class="card-header">Hadist Shahih</div>
-                        <div class="card-body">
-                            <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab aspernatur amet ut
-                                molestiae
-                                id minima perferendis alias ratione. Iure dolorem delectus, vero nesciunt expedita
-                                soluta
-                                laborum sed similique sint reiciendis. Fugit distinctio quam aut necessitatibus vitae
-                                iusto
-                                dicta maiores dolore.</article>
                         </div>
                     </div>
                 </div>
@@ -131,7 +117,7 @@
             <h2>Lorem Ipsum</h2>
             <div class="row">
                 <div class="col-lg">
-                    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non praesentium
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non praesentium
                         impedit fuga
                         voluptates? Optio, quod aliquid facilis debitis iste eos accusantium ratione iure veritatis
                         minima
@@ -274,11 +260,11 @@
                         aperiam vitae amet ducimus enim eaque culpa. Necessitatibus culpa laudantium eos libero
                         deleniti,
                         quia
-                        voluptate amet. Cumque, quisquam expedita..</article>
+                        voluptate amet. Cumque, quisquam expedita..</p>
                 </div>
+            </div>
         </section>
         <!-- END SELECTION PROFILE -->
     </div>
-    </div>
-    </div>
+
 </body>

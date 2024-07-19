@@ -124,7 +124,7 @@ include("komponen/head.inc.php");
                     <span class="logo-text">Masjid Al-Bayaan<br>Login Here</span>
                 </a>
             </div>
-            <form class="form-signin needs-validation" novalidate action="proses\proses_login.php" method="POST">
+            <form class="form-signin needs-validation" novalidate action="proses/proses_login.php" method="POST">
                 <div class="form-floating mb-2 rounded-2">
                     <input name="username" type="email" class="form-control" id="validationCustomUsername"
                         placeholder="name@example.com" required>
@@ -158,14 +158,13 @@ include("komponen/head.inc.php");
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    
     (() => {
         'use strict'
 
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
         const forms = document.querySelectorAll('.needs-validation')
 
-        // Loop over them and prevent submission
+
         Array.from(forms).forEach(form => {
             form.addEventListener('submit', event => {
                 if (!form.checkValidity()) {

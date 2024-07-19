@@ -10,16 +10,18 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
     $page = "berita.php";
 
 } elseif (isset($_GET['x']) && $_GET['x'] == 'profil') {
+} elseif (isset($_GET['x']) && $_GET['x'] == 'meet') {
+    $page = "meet.php";
+
+} elseif (isset($_GET['x']) && $_GET['x'] == 'profil') {
     $page = "profil.php";
 
 } elseif (isset($_GET['x']) && $_GET['x'] == 'layanan') {
     $page = "layanan.php";
-
 } elseif (isset($_GET['x']) && $_GET['x'] == 'user') {
     if (isset($_SESSION['level_user']) && $_SESSION['level_user'] == 1) {
         $page = "user.php";
     } else {
-        // Tindakan jika tidak memiliki akses ke halaman user
         $page = "home.php";
     }
     
