@@ -10,6 +10,7 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
     $page = "berita.php";
 
 } elseif (isset($_GET['x']) && $_GET['x'] == 'profil') {
+    $page = "profil.php";
 } elseif (isset($_GET['x']) && $_GET['x'] == 'meet') {
     $page = "meet.php";
 
