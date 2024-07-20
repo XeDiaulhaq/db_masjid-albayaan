@@ -1,20 +1,16 @@
 <?php
 
 $username = $_SESSION['username_user'] ?? '';
-
-// Query untuk mengambil data pengguna berdasarkan username
+ 
 $queryi = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$username'");
-
-// Cek jika query berhasil dieksekusi
+ 
 if (!$queryi) {
     echo "Query error: " . mysqli_error($conn);
     exit;
 }
 
 $resulti = mysqli_fetch_array($queryi);
-
-// Cek jika data ditemukan
-if (!$resulti) {
+ if (!$resulti) {
     echo "User not found";
     exit;
 }

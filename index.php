@@ -1,6 +1,5 @@
 <?php
-
-// $page = 'home.php'; // Inisialisasi variabel $page dengan string kosong
+ 
 session_start();
 include("komponen\head.inc.php");
 if (isset($_GET['x']) && $_GET['x'] == 'home') {
@@ -27,10 +26,10 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
     }
     
 } elseif (isset($_GET['x']) && $_GET['x'] == 'logout') {
-    include ("proses/proses_logout.php"); // Gunakan "/" bukan "\"
+    include ("proses/proses_logout.php");  
 } elseif (isset($_GET['x']) && $_GET['x'] == 'login') {
     include "login.php";
-    exit; // Mengakhiri script jika file login di-include
+    exit; 
 }else{
     $page = "home.php";
 }

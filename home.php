@@ -149,7 +149,7 @@
             fetch(`https://api.hadith.gading.dev/books/${collection}/${number}`)
                 .then(response => response.json())
                 .then(data => {
-                    console.log('Fetch successful'); // Tambahkan log ini
+                    
                     let resultDiv = document.getElementById('hasil-hadis');
                     if (data.data) {
                         resultDiv.innerHTML = `

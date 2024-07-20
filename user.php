@@ -425,8 +425,6 @@ while ($record = mysqli_fetch_array($query)) {
     </div>
     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"><?php
         require('proses/connect.php');
-        
-        // Query untuk mengambil semua data dari tabel tb_donasi
         $query = "SELECT * FROM tb_donasi";
         $result = $conn->query($query);
         
@@ -441,7 +439,7 @@ while ($record = mysqli_fetch_array($query)) {
         
         $conn->close();
         ?>
-        
+
         <body>
             <div class="container mt-5">
                 <h2 class="text-center">Laporan Donasi</h2>
@@ -458,58 +456,60 @@ while ($record = mysqli_fetch_array($query)) {
                         </thead>
                         <tbody>
                             <?php if (!empty($donations)): ?>
-                                <?php $no = 1; ?>
-                                <?php foreach ($donations as $donasi): ?>
-                                    <tr>
-                                        <th scope="row"><?php echo $no++; ?></th>
-                                        <td><?php echo $donasi['nama']; ?></td>
-                                        <td><?php echo $donasi['email']; ?></td>
-                                        <td><?php echo $donasi['jumlah']; ?></td>
-                                        <td><?php echo $donasi['pesan']; ?></td>
-                                    </tr>
-                                <?php endforeach; ?>
+                            <?php $no = 1; ?>
+                            <?php foreach ($donations as $donasi): ?>
+                            <tr>
+                                <th scope="row"><?php echo $no++; ?></th>
+                                <td><?php echo $donasi['nama']; ?></td>
+                                <td><?php echo $donasi['email']; ?></td>
+                                <td><?php echo $donasi['jumlah']; ?></td>
+                                <td><?php echo $donasi['pesan']; ?></td>
+                            </tr>
+                            <?php endforeach; ?>
                             <?php else: ?>
-                                <tr>
-                                    <td colspan="5" class="text-center">Tidak ada data donasi</td>
-                                </tr>
+                            <tr>
+                                <td colspan="5" class="text-center">Tidak ada data donasi</td>
+                            </tr>
                             <?php endif; ?>
                         </tbody>
                     </table>
                 </div>
             </div>
         </body>
+
         </html>
-        </div>
+    </div>
 
 </div>
 
 <script>
-    
-    (() => {
-        'use strict'
+(() => {
+    'use strict'
 
-       
-        const forms = document.querySelectorAll('.needs-validation')
 
-        
-        Array.from(forms).forEach(form => {
-            form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
+    const forms = document.querySelectorAll('.needs-validation')
 
-                form.classList.add('was-validated')
-            }, false)
-        })
-    })()
+
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+        }, false)
+    })
+})()
 </script>
-<script>const triggerTabList = document.querySelectorAll('#myTab button')
-    triggerTabList.forEach(triggerEl => {
-        const tabTrigger = new bootstrap.Tab(triggerEl)
+<script>
+const triggerTabList = document.querySelectorAll('#myTab button')
+triggerTabList.forEach(triggerEl => {
+    const tabTrigger = new bootstrap.Tab(triggerEl)
 
-        triggerEl.addEventListener('click', event => {
-            event.preventDefault()
-            tabTrigger.show()
-        })
-    })</script>
+    triggerEl.addEventListener('click', event => {
+        event.preventDefault()
+        tabTrigger.show()
+    })
+})
+</script>

@@ -46,10 +46,10 @@
         .navbar2 {
             border-top: 1px solid;
             border-bottom: 1px solid;
-            background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang dengan transparansi */
+            background-color: rgba(255, 255, 255, 0.8); 
             display: flex;
             justify-content: center;
-            /* Padding agar konten tidak terlalu rapat */
+ 
             position: sticky;
             top: 0;
             z-index: 10;
@@ -57,7 +57,7 @@
         .navbar2 .nav-menu {
             display: flex;
             gap: 18px;
-            /* Jarak antar link */
+        
         }
         .navmain {
             font-family: "Questrial", sans-serif;
@@ -91,7 +91,7 @@
         }
         .dropdown-menu-end {
             margin-left: 20px;
-            /* Menambahkan jarak antara text dan dropdown */
+            
         }
         .center-content {
             display: flex;
@@ -180,7 +180,7 @@
             border-radius: 8px;
             z-index: 1;
             width: 200px;
-            /* Sesuaikan dengan ukuran yang diinginkan */
+           
             height: 300px;
             text-align: center;
         }

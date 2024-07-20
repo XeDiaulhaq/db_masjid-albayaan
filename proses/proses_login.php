@@ -12,8 +12,8 @@ if (!empty($_POST['submit_validate'])) {
     if ($hasil) {
         $_SESSION['username_user'] = $username;
         $_SESSION['level_user'] = $hasil['level'];
-        header('Location:../home'); // Ubah ke lokasi yang benar
-        exit(); // Tambahkan exit() di sini
+        header('Location:../home');  
+        exit(); 
     } else {
         echo "username atau password salah";
         echo "<script>

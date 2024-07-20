@@ -17,13 +17,11 @@ $email = $data['email'] ?? '';
 $jumlah = $data['jumlah'] ?? '';
 $pesan = $data['pesan'] ?? '';
 $result = $data['result'] ?? '';
-
-// Fungsi untuk validasi email
+ 
 function is_valid_email($email) {
     return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
-
-// Pastikan semua data yang diperlukan ada
+ 
 if ($nama && $email && $jumlah) {
     if (!is_valid_email($email)) {
         echo json_encode([

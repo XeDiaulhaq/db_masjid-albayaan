@@ -5,8 +5,7 @@ function getJadwalSholat() {
         .then(response => response.json())
         .then(data => {
             const jadwalSholat = data.data.timings;
-
-            // Mengisi nilai jadwal sholat ke dalam elemen HTML yang sesuai
+ 
             document.querySelector('.card-title.tgl').innerHTML = `<i class="bi bi-geo-alt-fill m-2"></i>Lhokseumawe, Aceh - ${data.data.date.gregorian.date}`;
             document.querySelector('.Imsak span').textContent = jadwalSholat.Imsak;
             document.querySelector('.Subuh span').textContent = jadwalSholat.Fajr;
@@ -41,7 +40,7 @@ function getNews() {
                 }
 
                 const newsContainer = document.getElementById('news-container');
-                newsContainer.innerHTML = ''; // Clear the container
+                newsContainer.innerHTML = '';  
 
                 data.data.forEach(news => {
                     const title = news.title ? news.title.toLowerCase() : '';
