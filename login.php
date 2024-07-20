@@ -23,93 +23,103 @@ include("komponen/head.inc.php");
 
 
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
-    .btn-primary{
-        background-color: var(--custom-bg-color-1) !important;
-        border-color: var(--custom-bg-color);
-        color:black;
-    }
-    .btn-primary:hover{
-        background-color: var(--custom-bg-color-2) !important;
-    }
-    .questrial-regular {
-        font-family: "Questrial", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    body {
-        font-family: "Questrial", sans-serif;
-    }
-
-    @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-            font-size: 3.5rem;
+        .btn-primary {
+            background-color: var(--custom-bg-color-1) !important;
+            border-color: var(--custom-bg-color);
+            color: black;
         }
-    }
 
-    .form-signin {
-        max-width: 330px;
-        padding: 1rem;
-    }
+        .btn-primary:hover {
+            background-color: var(--custom-bg-color-2) !important;
+        }
 
-    .form-signin input[type="email"] {
-        margin-bottom: -1px;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
+        .questrial-regular {
+            font-family: "Questrial", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
 
-    .navbar-brand {
-        display: flex;
-        align-items: center;
-    }
+        body {
+            font-family: "Questrial", sans-serif;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .form-signin {
+            max-width: 330px;
+            padding: 1rem;
+        }
+
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
 
 
-    .logo-text {
-        font-size: 1.25rem;
-        font-weight: normal;
-    }
+        .logo-text {
+            font-size: 1.25rem;
+            font-weight: normal;
+        }
 
-    body {
-        font-family: "Questrial", sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f8f9fa;
-    }
+        body {
+            font-family: "Questrial", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
 
-    .form-container {
-        border: 3px solid white;
-        border-radius: 8px;
-        padding: 8px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
+        .form-container {
+            border: 3px solid white;
+            border-radius: 8px;
+            padding: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
 
-    .logo-container {
-        display: flex;
-        align-items: left;
-        justify-content: center;
-        padding: 2px;
-        margin: 1px;
+        .logo-container {
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            padding: 2px;
+            margin: 1px;
 
-    }
+        }
 
-    .logo-container img {}
+        .logo-text {
+            font-size: 20px;
+            font-weight: normal;
+        }
 
-    .logo-text {
-        font-size: 20px;
-        font-weight: normal;
-    }
+        .form-signin {
+            max-width: 440px;
+            margin: auto;
+        }
 
-    .form-signin {
-        max-width: 440px;
-        margin: auto;
-    }
+        .xe {
+            visibility: hidden;
+        }
+        .hide:hover .xe {
+            visibility: visible;
+        }
+        .hide:hover .hide-text {
+            visibility: hidden;
+        }
     </style>
 
 </head>
@@ -134,7 +144,8 @@ include("komponen/head.inc.php");
                     </div>
                 </div>
                 <div class="form-floating">
-                    <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                    <input name="password" type="password" class="form-control" id="floatingPassword"
+                        placeholder="Password" required>
                     <label for="floatingPassword">Password</label>
                     <div class="invalid-feedback">
                         Please fill in the password
@@ -148,34 +159,43 @@ include("komponen/head.inc.php");
                 </div>
                 <button class="btn btn-primary w-100" type="submit" name="submit_validate" value="aaa">Login</button>
             </form>
+
         </div>
+        <div class="hide"> <div class="hide-text text-center"> HERE PASSWORD</div>
+            <div class="xe w-100 m-auto mt-2 rounded-3">
+                <div class="form-container">
+                    Username: owner@xe / user@xe <br>
+                    password: a
+                </div>
+            </div>
+        </div>
+
     </main>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        </script>
     <script>
-    
-    (() => {
-        'use strict'
+        (() => {
+            'use strict'
 
-        const forms = document.querySelectorAll('.needs-validation')
+            const forms = document.querySelectorAll('.needs-validation')
 
 
-        Array.from(forms).forEach(form => {
-            form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
 
-                form.classList.add('was-validated')
-            }, false)
-        })
-    })()
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
     </script>
 
 </body>

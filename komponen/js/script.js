@@ -1,27 +1,31 @@
+
+//JS jadwal Sholat
 function getJadwalSholat() {
     fetch('https://api.aladhan.com/v1/timingsByCity?city=Lhokseumawe&country=Indonesia&method=2')
-    .then(response => response.json())
-    .then(data => {
-        const jadwalSholat = data.data.timings;
+        .then(response => response.json())
+        .then(data => {
+            const jadwalSholat = data.data.timings;
 
-        // Mengisi nilai jadwal sholat ke dalam elemen HTML yang sesuai
-        document.querySelector('.card-title.tgl').innerHTML = `<i class="bi bi-geo-alt-fill m-2"></i>Lhokseumawe, Aceh - ${data.data.date.gregorian.date}`;
-        document.querySelector('.Imsak span').textContent = jadwalSholat.Imsak;
-        document.querySelector('.Subuh span').textContent = jadwalSholat.Fajr;
-        document.querySelector('.Dhuzur span').textContent = jadwalSholat.Dhuhr;
-        document.querySelector('.Ashar span').textContent = jadwalSholat.Asr;
-        document.querySelector('.Magrib span').textContent = jadwalSholat.Maghrib;
-        document.querySelector('.Isya span').textContent = jadwalSholat.Isha;
-    })
-    .catch(error => {
-        console.error('Terjadi kesalahan dalam mengambil data:', error);
-    });
+            // Mengisi nilai jadwal sholat ke dalam elemen HTML yang sesuai
+            document.querySelector('.card-title.tgl').innerHTML = `<i class="bi bi-geo-alt-fill m-2"></i>Lhokseumawe, Aceh - ${data.data.date.gregorian.date}`;
+            document.querySelector('.Imsak span').textContent = jadwalSholat.Imsak;
+            document.querySelector('.Subuh span').textContent = jadwalSholat.Fajr;
+            document.querySelector('.Dhuzur span').textContent = jadwalSholat.Dhuhr;
+            document.querySelector('.Ashar span').textContent = jadwalSholat.Asr;
+            document.querySelector('.Magrib span').textContent = jadwalSholat.Maghrib;
+            document.querySelector('.Isya span').textContent = jadwalSholat.Isha;
+        })
+        .catch(error => {
+            console.error('Terjadi kesalahan dalam mengambil data:', error);
+        });
 }
 
 getJadwalSholat();
 
+
+//JS berita
 function getNews() {
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         const apiUrl = 'https://berita-indo-api.vercel.app/v1/cnn-news';
 
         fetch(apiUrl)
@@ -66,7 +70,7 @@ function getNews() {
 
 getNews();
 
-
+//JS kirm Janji Temu
 document.getElementById('janji-temu').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -85,7 +89,7 @@ document.getElementById('janji-temu').addEventListener('submit', function (event
         `Waktu: ${time}%0A` +
         `Pesan: ${message}`;
 
-    const waUrl = `https://wa.me/62895630243740?text=${waMessage}`; 
+    const waUrl = `https://wa.me/62895630243740?text=${waMessage}`;
 
     window.open(waUrl, '_blank');
 });

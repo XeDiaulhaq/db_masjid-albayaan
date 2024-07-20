@@ -1,3 +1,4 @@
+<br> <br>
 <div class="fut text-center bg-light py-1 fixed-bottom">
         Copyright 2024 Masjid Al-Bayaan | <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact
             Me</a>
@@ -44,11 +45,10 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="komponen\js\script.js"></script>
-    <script>    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    <script> 
     (() => {
         'use strict'
 
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
         const forms = document.querySelectorAll('.needs-validation')
 
         // Loop over them and prevent submission
