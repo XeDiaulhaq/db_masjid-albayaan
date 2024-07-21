@@ -25,8 +25,7 @@ getJadwalSholat();
 //JS berita
 function getNews() {
     document.addEventListener('DOMContentLoaded', function () {
-        const apiUrl = 'https://berita-indo-api.vercel.app/v1/cnn-news';
-
+        const apiUrl = 'https://berita-indo-api.vercel.app/v1/republika-news/islam-digest';
         fetch(apiUrl)
             .then(response => {
                 if (!response.ok) {
